@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/recommendation_icon"
+        android:title=""
+        android:checkable="true"
+        android:id="@+id/recommendationFragment" />
+    <item android:icon="@drawable/library_icon"
+        android:title=""
+        android:checkable="true"
+        android:id="@+id/myLibraryFragment"/>
+    <item android:icon="@drawable/deferred_books_icon"
+        android:checkable="true"
+        android:title=""
+        android:id="@+id/deferredBooksFragment" />
+    <item android:icon="@drawable/search_icon"
+        android:checkable="true"
+        android:title=""
+        android:id="@+id/searchFragment" />
+</menu>

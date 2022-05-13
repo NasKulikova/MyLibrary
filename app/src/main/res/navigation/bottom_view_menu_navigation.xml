@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_view_menu_navigation"
+    app:startDestination="@id/recommendationFragment">
+
+    <fragment
+        android:id="@+id/recommendationFragment"
+        android:name="com.example.mylibrary.fragments.RecommendationFragment"
+        android:label="fragment_recommendation"
+        tools:layout="@layout/fragment_recommendation" />
+    <fragment
+        android:id="@+id/myLibraryFragment"
+        android:name="com.example.mylibrary.fragments.MyLibraryFragment"
+        android:label="fragment_my_library"
+        tools:layout="@layout/fragment_my_library" />
+    <fragment
+        android:id="@+id/deferredBooksFragment"
+        android:name="com.example.mylibrary.fragments.DeferredBooksFragment"
+        android:label="fragment_deffered_books"
+        tools:layout="@layout/fragment_deferred_books" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.mylibrary.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+</navigation>

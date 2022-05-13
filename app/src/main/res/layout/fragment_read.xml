@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8FEDCE9F">
+
+    <TextView
+        android:id="@+id/textSizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minus"
+        android:textColor="@color/black_adaptive"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/plusTextView"
+        app:layout_constraintStart_toEndOf="@+id/minusTextView"
+        app:layout_constraintTop_toBottomOf="@+id/changeTextSizeSeekBar" />
+
+    <TextView
+        android:id="@+id/plusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:textColor="@color/black_adaptive"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/changeTextSizeSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/changeTextSizeSeekBar" />
+
+    <TextView
+        android:id="@+id/minusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minus"
+        android:textColor="@color/black_adaptive"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/changeTextSizeSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/changeTextSizeSeekBar" />
+
+    <TextView
+        android:id="@+id/changeTextSizeLogoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/aa"
+        android:textColor="@color/black_adaptive"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minusTextView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".fragments.ReadFragment">
+
+            <TextView
+                android:id="@+id/publisherHouseOfReadedBookTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:textColor="@color/black_adaptive"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/authorOfReadedBookTextView"
+                tools:text="Издательство" />
+
+            <TextView
+                android:id="@+id/annotationOfReadedBookTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="fill"
+                android:textColor="@color/black_adaptive"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/publisherHouseOfReadedBookTextView"
+                tools:text="Аннотация" />
+
+            <TextView
+                android:id="@+id/textOfReadedBookTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="fill"
+                android:textColor="@color/black_adaptive"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/annotationOfReadedBookTextView"
+                tools:text="Очень длинный текст огромной книги, даже еще длинее, чем ты, читатель, мог себе представить" />
+
+            <TextView
+                android:id="@+id/nameOfReadedBookTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:textColor="@color/black_adaptive"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/coverOfReadedBookImageView"
+                tools:text="Название книги" />
+
+            <ImageView
+                android:id="@+id/coverOfReadedBookImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/gentleman_from_san_francisco_cover" />
+
+            <TextView
+                android:id="@+id/authorOfReadedBookTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:textColor="@color/black_adaptive"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameOfReadedBookTextView"
+                tools:text="Автор" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <SeekBar
+        android:id="@+id/changeTextSizeSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:max="15"
+        android:progress="4"
+        app:layout_constraintBottom_toBottomOf="@+id/changeTextSizeLogoTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/changeTextSizeLogoTextView"
+        app:layout_constraintTop_toTopOf="@+id/changeTextSizeLogoTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

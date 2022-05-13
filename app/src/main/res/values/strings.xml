@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">My library</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="defer">Отложить</string>
+    <string name="send">Отправить</string>
+    <string name="entercom">Введите комментарий</string>
+    <string name="add_in_library">Добавить в библиотеку</string>
+    <string name="deferred">Отложено</string>
+    <string name="added_in_library">Добавлено в библиотеку</string>
+    <string name="recommendation">Рекомендации:</string>
+    <string name="continue_reading">Продолжить чтение:</string>
+    <string name="read">Читать</string>
+    <string name="my_library">Моя библиотека:</string>
+    <string name="delete_from_library">Удалить из библиотеки</string>
+    <string name="delete_from_deferred">Удалить из отложенного</string>
+    <string name="my_deferred_books">Мои отложенные книги:</string>
+    <string name="search">Поиск</string>
+    <string name="aa">Аа</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="registrationData">"Введите данные для регистрации"</string>
+
+    <string name="buttonSignIn">Войти</string>
+    <string name="buttonRegister">Зарегистрироваться</string>
+    <string name="text_bottom">Войдите в свою учетную запись</string>
+    <string name="app_in_name_two">Личный кабинет</string>
+    <string name="app_in_name">ЭЛЕКТРОННАЯ БИБЛИОТЕКА</string>
+
+    <string name="price">Цена %1$s руб.</string>
+    <string name="free">Бесплатно</string>
+    <string name="buy">Купить</string>
+    <!-- Strings related to login -->
+
+</resources>

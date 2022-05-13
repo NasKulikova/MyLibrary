@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/deferButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_background_red"
+        android:text="@string/defer"
+        android:textAllCaps="false"
+        android:textColor="@color/black_adaptive"
+        app:layout_constraintBottom_toBottomOf="@id/priceTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/authorTextView"
+        app:layout_constraintTop_toBottomOf="@+id/addInLibraryButton"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <TextView
+        android:id="@+id/authorTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black_adaptive"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/genreOfBookTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/coverOfBookImageView"
+        app:layout_constraintTop_toBottomOf="@+id/nameOfBookTextView"
+        app:layout_constraintWidth_percent="0.4"
+        tools:text="Иванов Иван Иванович" />
+
+    <TextView
+        android:id="@+id/genreOfBookTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black_adaptive"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/priceTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/coverOfBookImageView"
+        app:layout_constraintTop_toBottomOf="@+id/authorTextView"
+        app:layout_constraintWidth_percent="0.4"
+        tools:text="Комедия" />
+
+    <TextView
+        android:id="@+id/nameOfBookTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black_adaptive"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/authorTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/coverOfBookImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        tools:text="Очень классная книга" />
+
+    <Button
+        android:id="@+id/addInLibraryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_background_unselected"
+        android:text="@string/add_in_library"
+        android:textAllCaps="false"
+        android:textColor="@color/black_adaptive"
+        app:layout_constraintBottom_toTopOf="@+id/deferButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/authorTextView"
+        app:layout_constraintTop_toTopOf="@id/nameOfBookTextView"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <ImageView
+        android:id="@+id/coverOfBookImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@+id/priceTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nameOfBookTextView"
+        app:layout_constraintWidth_percent="0.2"
+        app:srcCompat="@drawable/ivanhoe_cover" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_adaptive"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/coverOfBookImageView"
+        app:layout_constraintTop_toBottomOf="@+id/genreOfBookTextView"
+        app:layout_constraintWidth_percent="0.4"
+        tools:text="Цена" />
+</androidx.constraintlayout.widget.ConstraintLayout>
